@@ -1,4 +1,4 @@
-package org.wrj.common;
+package org.wrj.domain;
 
 public class ResponseBody<T> {
     private int code;

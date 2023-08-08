@@ -25,7 +25,7 @@ public class MysqlGenerator {
         String password="";
 
         //数据库表的设置
-        List<String> listTable = Arrays.asList("product");  //设置需要自动代码生成的表名
+        List<String> listTable = Arrays.asList("ums_user");  //设置需要自动代码生成的表名
         List<String> listTableSuffix = Arrays.asList("_b");    //设置 过滤 表的后缀
         List<String> listTablePrefix = Arrays.asList("t_","c_"); //设置 过滤 表的后缀
 
