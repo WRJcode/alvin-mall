@@ -40,6 +40,11 @@ spring:
       reset-enable: false
       login-username: admin
       login-password: admin
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 mybatis-plus:
   mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    logImpl: org.apache.ibatis.logging.stdout.StdOutImpl

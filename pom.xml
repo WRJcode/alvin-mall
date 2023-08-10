@@ -26,7 +26,7 @@
     <mybatis.plus.generator>3.5.1</mybatis.plus.generator>
     <mysql.connect>8.0.25</mysql.connect>
     <druid.version>1.2.9</druid.version>
-    <swagger.version>3.0.0</swagger.version>
+    <swagger.version>2.9.2</swagger.version>
     <lombok.version>1.18.24</lombok.version>
   </properties>
 

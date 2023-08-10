@@ -1,5 +1,8 @@
 package org.wrj.domain;
 
+import io.swagger.annotations.ApiModel;
+
+@ApiModel(value = "响应对象", description = "")
 public class ResponseBody<T> {
     private int code;
     private String message;
