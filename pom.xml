@@ -28,6 +28,7 @@
     <druid.version>1.2.9</druid.version>
     <swagger.version>2.9.2</swagger.version>
     <lombok.version>1.18.24</lombok.version>
+    <logstash-logback.version>7.2</logstash-logback.version>
   </properties>
 
   <parent>
@@ -91,6 +92,12 @@
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
+      </dependency>
+       <!--集成logstash-->
+      <dependency>
+        <groupId>net.logstash.logback</groupId>
+        <artifactId>logstash-logback-encoder</artifactId>
+        <version>${logstash-logback.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

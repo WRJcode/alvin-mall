@@ -48,3 +48,8 @@ mybatis-plus:
   mapper-locations: classpath*:mapper/*.xml
   configuration:
     logImpl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+logstash:
+  host: localhost
+  enableInnerLog: false
