@@ -1,4 +1,4 @@
-package org.wrj.domain.vo;
+package org.wrj.demo.domain.vo;
 
 import io.swagger.annotations.ApiModel;
 import lombok.Getter;

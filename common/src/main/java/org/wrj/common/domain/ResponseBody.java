@@ -1,4 +1,4 @@
-package org.wrj.domain;
+package org.wrj.common.domain;
 
 import io.swagger.annotations.ApiModel;
 

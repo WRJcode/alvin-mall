@@ -1,11 +1,11 @@
-package org.wrj.config;
+package org.wrj.common.config;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping;
-import org.wrj.domain.SwaggerProperties;
+import org.wrj.common.domain.SwaggerProperties;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;

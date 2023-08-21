@@ -3,8 +3,8 @@ package org.wrj.demo.config;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.wrj.config.BaseSwaggerConfig;
-import org.wrj.domain.SwaggerProperties;
+import org.wrj.common.config.BaseSwaggerConfig;
+import org.wrj.common.domain.SwaggerProperties;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
