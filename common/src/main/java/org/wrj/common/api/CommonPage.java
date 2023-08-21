@@ -1,7 +1,11 @@
 package org.wrj.common.api;
 
+import com.github.pagehelper.PageInfo;
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public class CommonPage<T> {
 
     private Integer pageNum;
@@ -19,7 +23,12 @@ public class CommonPage<T> {
      */
     public static <T> CommonPage<T> restPage(List<T> list){
         CommonPage<T> result = new CommonPage<T>();
-
-        return null;
+        PageInfo<T> pageInfo = new PageInfo<>(list);
+        result.setTotalPage(pageInfo.getPages());
+        result.setPageNum(pageInfo.getPageNum());
+        result.setPageSize(pageInfo.getPageSize());
+        result.setTotal(pageInfo.getTotal());
+        result.setList(pageInfo.getList());
+        return result;
     }
 }

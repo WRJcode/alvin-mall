@@ -29,6 +29,7 @@
     <swagger.version>2.9.2</swagger.version>
     <lombok.version>1.18.24</lombok.version>
     <logstash-logback.version>7.2</logstash-logback.version>
+    <pageHelper-version>1.4.5</pageHelper-version>
   </properties>
 
   <parent>
@@ -98,6 +99,23 @@
         <groupId>net.logstash.logback</groupId>
         <artifactId>logstash-logback-encoder</artifactId>
         <version>${logstash-logback.version}</version>
+      </dependency>
+<!--      github分页插件pageHelper-->
+<!--      <dependency>-->
+<!--        <groupId>com.github.pagehelper</groupId>-->
+<!--        <artifactId>pagehelper</artifactId>-->
+<!--        <version>${pageHelper-version}</version>-->
+<!--      </dependency>-->
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+        <version>${pageHelper-version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
     </dependencies>
   </dependencyManagement>
