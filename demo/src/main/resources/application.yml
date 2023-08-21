@@ -49,6 +49,16 @@ mybatis-plus:
   configuration:
     logImpl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+redis:
+  database: alvin-mall
+  key:
+    authCode: 'ums:authCode'
+    orderId: 'oms:orderId'
+    member: 'ums:member'
+  expire:
+    authCode: 90
+    common: 86400
+
 
 logstash:
   host: localhost
