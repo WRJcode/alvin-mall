@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.wrj.common.api.CommonPage;
+import org.wrj.common.api.CommonResult;
 import org.wrj.demo.service.ProductService;
 import org.wrj.entity.Product;
 
@@ -30,11 +31,12 @@ public class ProductController {
 
     //分页列表
     @GetMapping("/list")
-    public CommonPage<Product> getList(@RequestParam(value="pageSize",defaultValue = "1")Integer pageSize,
-                              @RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum){
+    public CommonResult<CommonPage<Product>> getList(@RequestParam(value="pageSize",defaultValue = "1")Integer pageSize,
+                                @RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum){
         PageHelper.startPage(pageNum,pageSize);
         List<Product> products = productService.list();
         //CommonPage<Product> productCommonPage = new CommonPage<>();
-        return  CommonPage.restPage(products);
+
+        return  CommonResult.success(CommonPage.restPage(products)) ;
     }
 }

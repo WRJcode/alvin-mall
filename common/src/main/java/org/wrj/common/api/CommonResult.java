@@ -1,5 +1,8 @@
 package org.wrj.common.api;
 
+import lombok.Data;
+
+@Data
 public class CommonResult<T> {
     private long code;
 
